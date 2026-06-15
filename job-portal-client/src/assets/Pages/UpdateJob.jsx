@@ -19,7 +19,7 @@ const UpdateJob = () => {
       const onSubmit = (data) => {
         data.skills = selectedOption;
         // console.log(data);
-        fetch(`https://mern-job-portal-website.vercel.app/update-job/${id}`, {
+        fetch(`https://mern-job-portel.onrender.com/update-job/${id}`, {
           method: "PATCH",
           headers: {'content-type': 'application/json'},
           body: JSON.stringify(data)

@@ -6,7 +6,7 @@ require('dotenv').config()
 // Middleware
 app.use(express.json())
 app.use(cors( {
-origin: ["https://https://mern-job-portal-website.vercel.app/"],
+origin: ["https://https://mern-job-portel.onrender.com/"],
   methods: ["POST", "GET"],
   credentials: true
 }
