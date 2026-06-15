@@ -44,7 +44,7 @@ async function run() {
 
     // Posting a Job
 
-    app.post("/post-job", async(req, res) => {
+    app.post("/all-jobs", async(req, res) => {
       const body = req.body;
       body.createAt = new Date();
       // console.log(body)
