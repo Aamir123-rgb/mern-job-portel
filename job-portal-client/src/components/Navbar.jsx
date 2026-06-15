@@ -32,12 +32,12 @@ const Navbar = () => {
                     cx= "12.0143"
                     cy = "12.5143"
                     r = "12.0143"
-                    fill = "#3575E2"
+                    fill = "#7c3aed"
                     fillOpacity = "0.4"
                     />
-                    <circle cx = "16.9857" cy = "17.4857" r="12.0143" fill = "#3575E2" />
+                    <circle cx = "16.9857" cy = "17.4857" r="12.0143" fill = "#7c3aed" />
                 </svg>
-                <span className="">JobJunction</span>
+                <span className="">CareerConnect</span>
             </a>
 
             {/* {NAV ITEMS FOR LARGE DEVICES} */}
@@ -88,8 +88,8 @@ const Navbar = () => {
                     ))
                 }
 
-<li className="text-white py-1"><Link to = "/login">Login</Link></li>
-<li className="text-white py-1"><Link to = "/login">Logout</Link></li>
+<li className="text-white py-1"><Link to = "/Sign-Up">Sign up</Link></li>
+<li className="text-white py-1"><Link to = "/Sign-Up">Sign up</Link></li>
             </ul>
         </div>
     </header>
