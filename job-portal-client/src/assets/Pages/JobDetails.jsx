@@ -8,7 +8,7 @@ const JobDetails = () => {
     const {id} = useParams();
     const [job, setJob] = useState([])
     useEffect(() => {
-        fetch(`https://mern-job-portel.onrender.com/all-jobs/${id}`).then(res => res.json()).then(data => setJob(data))
+        fetch(`https://mern-job-portel.onrender.com/all-jobss/${id}`).then(res => res.json()).then(data => setJob(data))
     }, [])
 
     const handleApply = async() => {

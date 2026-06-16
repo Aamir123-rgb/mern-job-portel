@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       children: [
         {path: "/", element: <Home/>},
         {
-          path: "/all-jobs",
+          path: "/all-jobss",
           element: <CreateJob/>
         },
         
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         {
           path: "/edit-job/:id",
           element: <UpdateJob/>,
-          loader: ({params}) => fetch(`https://mern-job-portel.onrender.com/all-jobs/${params.id}`)
+          loader: ({params}) => fetch(`https://mern-job-portel.onrender.com/all-jobss/${params.id}`)
         },
         {
           path: "/job/:id",

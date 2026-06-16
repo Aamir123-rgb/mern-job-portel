@@ -44,7 +44,7 @@ async function run() {
 
     // Posting a Job
 
-    app.post("/all-jobs", async(req, res) => {
+    app.post("/all-jobss", async(req, res) => {
       const body = req.body;
       body.createAt = new Date();
       // console.log(body)
@@ -60,13 +60,13 @@ async function run() {
     })
 
     // Get all jobs
-    app.get("/all-jobs", async(req, res) => {
+    app.get("/all-jobss", async(req, res) => {
       const jobs = await jobsCollections.find({}).toArray()
       res.send(jobs);
     })
 
     // Get Single job using ID
-    app.get("/all-jobs/:id", async(req, res) => {
+    app.get("/all-jobss/:id", async(req, res) => {
       const id = req.params.id;
       const job = await jobsCollections.findOne({
         _id: new ObjectId(id)
